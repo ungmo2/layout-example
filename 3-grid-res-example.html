@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #58666e;
+      background-color: #f0f3f4;
+    }
+
+    .container {
+      /* fixed width */
+      max-width: 800px;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+
+    .grid {
+      width: 26%;
+      height: 300px;
+      /*height: 100%;*/
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .grid:not(:nth-of-type(3n-2)) {
+      margin-left: 11%;
+    }
+
+    .grid-image {
+      display: block;
+      width: 100%;
+      border-radius: 2px;
+      opacity: 0.5;
+      transition: opacity 0.5s;
+    }
+
+    .grid-image:hover {
+      opacity: 1.0;
+    }
+
+    .grid-heading {
+      line-height: 3.0em;
+      font-size: 0.8em;
+      color: #4275F4;
+    }
+
+    .grid-contents {
+      line-height: 1.2em;
+    }
+    /* for tablet */
+
+    @media screen and (max-width: 800px) {
+      .container {
+        width: 96%;
+        margin: 10px auto;
+
+      }
+      .grid {
+        width: 45%;
+        /*margin: 0;*/
+      }
+      .grid:not(:nth-of-type(3n-2)) {
+        margin-left: 0;
+      }
+      .grid:nth-of-type(2n) {
+        margin-left: 10%;
+      }
+
+    }
+    /* for smartphone */
+
+    @media screen and (max-width: 480px) {
+      .grid {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+      }
+      .grid:nth-of-type(2n) {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/gestures.7b9524b1.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/motion.d3233db9.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/mobile-preview.4a7f4139.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/gestures.7b9524b1.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/motion.d3233db9.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/mobile-preview.4a7f4139.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/gestures.7b9524b1.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/motion.d3233db9.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+    <div class="grid">
+      <img class="grid-image" src="https://atomic.io/assets/images/features/mobile-preview.4a7f4139.png">
+      <h3 class="grid-heading">EXPLORE INTERACTIONS</h3>
+      <p class="grid-contents">Design for any platform with interaction triggers and gestures such as swipe, hover, double tap and more.</p>
+    </div>
+  </div>
+</body>
+</html>
